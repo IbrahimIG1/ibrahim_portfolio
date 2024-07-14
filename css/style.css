@@ -500,8 +500,8 @@ body {
 }
 
 .circle-background {
-    width: 200px; /* Adjust to the old image's width */
-    height: 200px; /* Adjust to the old image's height */
+    width: 100px; /* Adjust to the old image's width */
+    height: 100px; /* Adjust to the old image's height */
     background-color: white; /* Circle background color */
     border-radius: 50%; /* Makes the div a circle */
     display: flex;
