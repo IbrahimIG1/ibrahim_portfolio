@@ -32,15 +32,18 @@
             border-radius: 10px;
             height: 700px;
             padding: 2px;
-            transition: opacity 0.5s ease; /* Add transition for opacity */
+            transition: opacity 0.5s ease;
+            /* Add transition for opacity */
         }
 
         .fade-out {
-            opacity: 0; /* Fade out effect */
+            opacity: 0;
+            /* Fade out effect */
         }
 
         .fade-in {
-            opacity: 1; /* Fade in effect */
+            opacity: 1;
+            /* Fade in effect */
         }
     </style>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -54,27 +57,28 @@
 <body data-spy="scroll" data-offset="80">
 
 
-  <!-- Start Nav bar-->
-	<div class="navbar navbar-default navbar-fixed-top menu-top dark_bg_menu"> 
-		<div class="container">
-			<div class="logo">
-				<a class="navbar-brand">
-					<strong style="font-size: 25px; color: #FF4A57;font-weight: bold;">IBRAHIM ALGAMMAL</strong>
-				</a>
-				<div class="mobile-nav"></div>
-			</div>
-			<div id="navbar" class="main_menu">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About Me</a></li>
-					<li><a href="#applications">Applications</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="https://drive.google.com/file/d/1CGVrBIbTJe4fsCII8jSYkm65RoOo_7Xw/view?usp=drive_link" target="_blank">My CV</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-<!-- End Nav bar-->
+    <!-- Start Nav bar-->
+    <div class="navbar navbar-default navbar-fixed-top menu-top dark_bg_menu">
+        <div class="container">
+            <div class="logo">
+                <a class="navbar-brand">
+                    <strong style="font-size: 25px; color: #FF4A57;font-weight: bold;">IBRAHIM ALGAMMAL</strong>
+                </a>
+                <div class="mobile-nav"></div>
+            </div>
+            <div id="navbar" class="main_menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://ibrahimig1.github.io/ibrahim_portfolio/">Home</a></li>
+                    <li><a href="https://ibrahimig1.github.io/ibrahim_portfolio/">About Me</a></li>
+                    <li><a href="https://ibrahimig1.github.io/ibrahim_portfolio/">Applications</a></li>
+                    <li><a href="https://ibrahimig1.github.io/ibrahim_portfolio/">Contact</a></li>
+                    <li><a href="https://drive.google.com/file/d/1CGVrBIbTJe4fsCII8jSYkm65RoOo_7Xw/view?usp=drive_link"
+                            target="_blank">My CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Nav bar-->
 
     <!-- START BANNER-SHOW -->
     <section id="applications_details" class="dark_bg main_banner">
@@ -83,8 +87,17 @@
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <div class="banner_content">
                         <strong>Application Name:-</strong>
-                        <p style="color: #ffffff; font-size: 24px; font-weight: normal;">
-                            Food App</p>
+                        <ul class="banner_social_link">
+                            <p style="color: #ffffff; font-size: 24px; font-weight: normal;">
+                                Food App</p>
+                            <hr>
+                            <li style="color: #FF4A57; font-size: 24px; font-weight: normal;">project github</li>
+                            </li>
+                            <li><a href="https://github.com/IbrahimIG1/good_food" target="_blank"><i class="fa fa-github"></i></a>
+                            </li>
+
+                        </ul>
+
                         <hr>
                         <p style="color: #ff4a57 ; font-size: 20px; font-weight: bold; text-transform: uppercase">Main
                             Packages Used: </p>
@@ -99,10 +112,42 @@
                         <hr>
                         <strong>Description:-</strong>
                         <p style="color: white; font-size: 24px; font-weight: normal;">
-                            food app is more than just a simple platform for finding great food. Our team has worked
-                            tirelessly to ensure our app features the best user interface design possible, making it
-                            easy to use and navigate. We take pride in our high-quality content, which features tasty
-                            and delicious food from all around the globe.</p>
+                            App facilitates online food ordering and payment.</p>
+                        <hr>
+                        <strong>Mechanism:-</strong>
+                        <!-- when app is open show the first screen onbording screen and then enter to login sceen if the
+                        user don't have an account can go to regester screen to sign up but he must Tracks registration
+                        rules about email formulas and numbers of password requirments and after surely the evrey
+                        information is ok app talk with api from dio package to save user data on server on php admin
+                        panel i controlle on it and when it save successfully usre can go and login with new email after
+                        he login his token saved in app database by sharedprefence package so that the user does not
+                        have to login every time he open app, in home screen when user choose specific meal he move to
+                        screen show he informations about this meal and he can order any amount from it when he check
+                        out he move to orders screen he can show all of meals he ordered it and totla price and he can
+                        increase or delete any order before payment and then he can checkout and payment getway open
+                        screen he can entrey his card informations and when payment success he can track his order place
+                        but i can't end this featur becuse it's payed from googleMaps and i can't I could not bear the
+                        cost,but i read the docs about tracking on google maps docs and write the code will after all
+                        that i can added meals on app whether it is in a department popular food or recommendation food
+                        from php admin panal. -->
+                        <p style="color: white; font-size: 24px; font-weight: normal;">
+                            >I developed a comprehensive mobile application that begins with an onboarding screen upon
+                            launch, followed by a login screen for existing users or a registration screen for new
+                            users. Registration adheres strictly to email formatting and password requirements. The app
+                            communicates with a PHP-administered API via the Dio package to securely store user data on
+                            a server controlled through a PHP admin panel. Upon successful registration or login, user
+                            authentication tokens are managed using the SharedPreferences package for persistent login
+                            sessions.</br>
+                            >The home screen offers users the ability to select specific meals, each leading to a
+                            dedicated screen displaying meal details where users can order any quantity. Upon checkout,
+                            users navigate to an orders screen displaying all ordered meals, total prices, and options
+                            to adjust orders before payment. Payment processing is facilitated via a payment gateway
+                            where users can enter card details. Following successful payment, users can track their
+                            orders using Google Maps integration, pending completion of the feature due to associated
+                            costs.
+
+                            Future updates include adding additional meals categorized as popular or recommended foods
+                            via the PHP admin panel.</p>
                         <hr>
                         <strong>Screen Shots:-</strong>
                         <div class="image-row">
@@ -113,7 +158,7 @@
                             <img class="screenshot" src="images/screen_shots/food_app/screen_5.jpg" />
                             <img class="screenshot" src="images/screen_shots/food_app/screen_6.jpg" />
                             <img class="screenshot" src="images/screen_shots/food_app/screen_7.jpg" />
-                            
+
                         </div>
                     </div>
 
@@ -148,11 +193,11 @@
             $(document).ready(function () {
                 const screenshots = $('.screenshot');
                 const mainImage = $('#main-image');
-    
+
                 screenshots.on('click', function () {
                     const newSrc = $(this).attr('src');
                     mainImage.removeClass('fade-in').addClass('fade-out');
-    
+
                     // Change image after fade out animation completes
                     setTimeout(() => {
                         mainImage.attr('src', newSrc);

@@ -32,15 +32,18 @@
             border-radius: 10px;
             height: 700px;
             padding: 2px;
-            transition: opacity 0.5s ease; /* Add transition for opacity */
+            transition: opacity 0.5s ease;
+            /* Add transition for opacity */
         }
 
         .fade-out {
-            opacity: 0; /* Fade out effect */
+            opacity: 0;
+            /* Fade out effect */
         }
 
         .fade-in {
-            opacity: 1; /* Fade in effect */
+            opacity: 1;
+            /* Fade in effect */
         }
     </style>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -54,27 +57,28 @@
 <body data-spy="scroll" data-offset="80">
 
 
- <!-- Start Nav bar-->
- <div class="navbar navbar-default navbar-fixed-top menu-top dark_bg_menu"> 
-    <div class="container">
-        <div class="logo">
-            <a class="navbar-brand">
-                <strong style="font-size: 25px; color: #FF4A57;font-weight: bold;">IBRAHIM ALGAMMAL</strong>
-            </a>
-            <div class="mobile-nav"></div>
-        </div>
-        <div id="navbar" class="main_menu">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#applications">Applications</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://drive.google.com/file/d/1CGVrBIbTJe4fsCII8jSYkm65RoOo_7Xw/view?usp=drive_link" target="_blank">My CV</a></li>
-            </ul>
+    <!-- Start Nav bar-->
+    <div class="navbar navbar-default navbar-fixed-top menu-top dark_bg_menu">
+        <div class="container">
+            <div class="logo">
+                <a class="navbar-brand">
+                    <strong style="font-size: 25px; color: #FF4A57;font-weight: bold;">IBRAHIM ALGAMMAL</strong>
+                </a>
+                <div class="mobile-nav"></div>
+            </div>
+            <div id="navbar" class="main_menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://ibrahimig1.github.io/ibrahim_portfolio/">Home</a></li>
+                    <li><a href="https://ibrahimig1.github.io/ibrahim_portfolio/">About Me</a></li>
+                    <li><a href="https://ibrahimig1.github.io/ibrahim_portfolio/">Applications</a></li>
+                    <li><a href="https://ibrahimig1.github.io/ibrahim_portfolio/">Contact</a></li>
+                    <li><a href="https://drive.google.com/file/d/1CGVrBIbTJe4fsCII8jSYkm65RoOo_7Xw/view?usp=drive_link"
+                            target="_blank">My CV</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
-<!-- End Nav bar-->
+    <!-- End Nav bar-->
 
     <!-- START BANNER-SHOW -->
     <section id="applications_details" class="dark_bg main_banner">
@@ -83,8 +87,16 @@
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <div class="banner_content">
                         <strong>Application Name:-</strong>
-                        <p style="color: #ffffff; font-size: 24px; font-weight: normal;">
-                            Doctor App</p>
+                        <ul class="banner_social_link">
+                            <p style="color: #ffffff; font-size: 24px; font-weight: normal;">
+                                Doctor App</p>
+                            <hr>
+                            <li style="color: #FF4A57; font-size: 24px; font-weight: normal;">project github</li>
+                            </li>
+                            <li><a href="https://github.com/IbrahimIG1/DocDocAppGit" target="_blank"><i class="fa fa-github"></i></a>
+                            </li>
+
+                        </ul>
                         <hr>
                         <p style="color: #ff4a57 ; font-size: 20px; font-weight: bold; text-transform: uppercase">Main
                             Packages Used: </p>
@@ -97,9 +109,21 @@
                         <hr>
                         <strong>Description:-</strong>
                         <p style="color: white; font-size: 24px; font-weight: normal;">
-                            App have informations about doctors across all specialties, Our
-                            comprehensive database includes details about each doctor's qualifications, patient ratings
-                            and reviews, and availability. we've got you covered</p>
+                            App have informations about doctors across all specialties.</p>
+                        <hr>
+                        <strong>Mechanism:-</strong>
+                        <p style="color: white; font-size: 24px; font-weight: normal;">
+                            >I developed a mobile application with a structured onboarding process that guides users
+                            through an initial onboarding screen before directing them to a login screen. For new users
+                            without an account, they are directed to a registration screen where registration rules for
+                            email format and password requirements are strictly enforced. Upon successful validation,
+                            the app communicates with a PHP backend via the Dio package to securely store user data on
+                            the server.
+                            After registration or login, user authentication tokens are managed using the
+                            SharedPreferences package to ensure seamless login experiences across sessions. The home
+                            screen is presented upon successful login, providing smooth navigation and interaction
+                            within the app. Users can browse and select doctors based on their specialties and
+                            recommendations.</p>
                         <hr>
                         <strong>Screen Shots:-</strong>
                         <div class="image-row">
@@ -143,11 +167,11 @@
             $(document).ready(function () {
                 const screenshots = $('.screenshot');
                 const mainImage = $('#main-image');
-    
+
                 screenshots.on('click', function () {
                     const newSrc = $(this).attr('src');
                     mainImage.removeClass('fade-in').addClass('fade-out');
-    
+
                     // Change image after fade out animation completes
                     setTimeout(() => {
                         mainImage.attr('src', newSrc);
