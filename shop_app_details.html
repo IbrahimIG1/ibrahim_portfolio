@@ -33,15 +33,18 @@
             border-radius: 10px;
             height: 700px;
             padding: 2px;
-            transition: opacity 0.5s ease; /* Add transition for opacity */
+            transition: opacity 0.5s ease;
+            /* Add transition for opacity */
         }
 
         .fade-out {
-            opacity: 0; /* Fade out effect */
+            opacity: 0;
+            /* Fade out effect */
         }
 
         .fade-in {
-            opacity: 1; /* Fade in effect */
+            opacity: 1;
+            /* Fade in effect */
         }
     </style>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -55,27 +58,28 @@
 <body data-spy="scroll" data-offset="80">
 
 
-  <!-- Start Nav bar-->
-	<div class="navbar navbar-default navbar-fixed-top menu-top dark_bg_menu"> 
-		<div class="container">
-			<div class="logo">
-				<a class="navbar-brand">
-					<strong style="font-size: 25px; color: #FF4A57;font-weight: bold;">IBRAHIM ALGAMMAL</strong>
-				</a>
-				<div class="mobile-nav"></div>
-			</div>
-			<div id="navbar" class="main_menu">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="https://ibrahimig1.github.io/ibrahim_portfolio/">Home</a></li>
+    <!-- Start Nav bar-->
+    <div class="navbar navbar-default navbar-fixed-top menu-top dark_bg_menu">
+        <div class="container">
+            <div class="logo">
+                <a class="navbar-brand">
+                    <strong style="font-size: 25px; color: #FF4A57;font-weight: bold;">IBRAHIM ALGAMMAL</strong>
+                </a>
+                <div class="mobile-nav"></div>
+            </div>
+            <div id="navbar" class="main_menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://ibrahimig1.github.io/ibrahim_portfolio/">Home</a></li>
                     <li><a href="https://ibrahimig1.github.io/ibrahim_portfolio/">About Me</a></li>
                     <li><a href="https://ibrahimig1.github.io/ibrahim_portfolio/">Applications</a></li>
                     <li><a href="https://ibrahimig1.github.io/ibrahim_portfolio/">Contact</a></li>
-					<li><a href="https://drive.google.com/file/d/1CGVrBIbTJe4fsCII8jSYkm65RoOo_7Xw/view?usp=drive_link" target="_blank">My CV</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-<!-- End Nav bar-->
+                    <li><a href="https://drive.google.com/file/d/1CGVrBIbTJe4fsCII8jSYkm65RoOo_7Xw/view?usp=drive_link"
+                            target="_blank">My CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Nav bar-->
 
     <!-- START BANNER-SHOW -->
     <section id="applications_details" class="dark_bg main_banner">
@@ -90,7 +94,8 @@
                             <hr>
                             <li style="color: #FF4A57; font-size: 24px; font-weight: normal;">project github</li>
                             </li>
-                            <li><a href="https://github.com/IbrahimIG1/Shop_App_API" target="_blank"><i class="fa fa-github"></i></a>
+                            <li><a href="https://github.com/IbrahimIG1/Shop_App_API" target="_blank"><i
+                                        class="fa fa-github"></i></a>
                             </li>
 
                         </ul>
@@ -121,11 +126,25 @@
                             <img class="screenshot" src="images/screen_shots/shop_app/screen_7.jpg" />
                             <img class="screenshot" src="images/screen_shots/shop_app/screen_8.jpg" />
                         </div>
+                        <hr>
+                        <strong>Mechanism:-</strong>
+                        <p style="color: white; font-size: 24px; font-weight: normal;">
+                            >application begins with an onboarding process that guides users
+                            through an initial onboarding screen before directing them to a login screen. For new users
+                            without an account, they are directed to a registration screen where registration rules for
+                            email format and password requirements are strictly enforced. Upon successful validation,
+                            the app communicates with a PHP backend via the Dio package to securely store user data on
+                            the server.
+                            >in home screen users can browse a diverse range of products such as clothing and
+                            electronics directly from the home screen. Each product listing offers detailed information
+                            including price, available colors, and a list of pros and cons. Users can seamlessly
+                            navigate to a dedicated screen for each product to explore comprehensive details before
+                            making a purchasing decision.</p>
                     </div>
 
                 </div>
 
-                
+
                 <div class="col-md-6 col-sm-12 col-xs-12" style="padding-top: 150px; padding-left: 150px;">
                     <div class="banner-images">
                         <img id="main-image" src="images/screen_shots/shop_app/screen_1.jpg"
@@ -154,11 +173,11 @@
             $(document).ready(function () {
                 const screenshots = $('.screenshot');
                 const mainImage = $('#main-image');
-    
+
                 screenshots.on('click', function () {
                     const newSrc = $(this).attr('src');
                     mainImage.removeClass('fade-in').addClass('fade-out');
-    
+
                     // Change image after fade out animation completes
                     setTimeout(() => {
                         mainImage.attr('src', newSrc);
