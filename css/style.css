@@ -237,6 +237,8 @@ a:hover{
     background: #fff;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
+    position: fixed !important;
+    top: 0 !important ;
 }
 .navbar-brand p{
     font-size: 30px;
